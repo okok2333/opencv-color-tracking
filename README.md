@@ -1,14 +1,14 @@
-# opencv-color-tracking
+##Opencv-color-tracking
 OpenCV real-time color tracking practice project
 
 一个基于 OpenCV 的实时颜色目标检测与定位学习项目。
 
-1. 项目简介
+## 1. 项目简介
 程序读取摄像头实时画面，将 BGR 图像转换到 HSV 颜色空间，
 通过 HSV 阈值完成目标颜色分割，并结合形态学处理和轮廓检测，
 实现目标区域框选以及中心坐标计算。
 
-2. 功能
+## 2. 功能
 - 摄像头实时图像读取
 - BGR → HSV 颜色空间转换
 - HSV 阈值实时调节
@@ -20,24 +20,24 @@ OpenCV real-time color tracking practice project
 - 目标中心坐标计算
 - 实时显示目标面积和中心位置
 
-3. 技术流程
-Camera Input
-↓
-BGR → HSV
-↓
-HSV Threshold
-↓
-Mask
-↓
-Morphological Processing
-↓
-Contour Detection
-↓
-Area Filtering
-↓
+## 3. 技术流程
+Camera Input  
+↓  
+BGR → HSV  
+↓  
+HSV Threshold  
+↓  
+Mask  
+↓  
+Morphological Processing  
+↓  
+Contour Detection  
+↓  
+Area Filtering  
+↓  
 Bounding Box & Center Position
 
-4. 开发与学习过程
+## 4. 开发与学习过程
 本项目为个人 OpenCV 学习实践。
 初版程序在 AI 辅助下完成，在此基础上进行了：
 - 本地 Python / OpenCV 环境配置
@@ -49,13 +49,27 @@ Bounding Box & Center Position
 通过该项目学习了 HSV 颜色空间、二值化、
 形态学处理、轮廓检测以及基础目标定位方法。
 
-5. 运行
+## 5. 运行
 安装依赖：
 pip install -r requirements.txt
 运行：
 python main.py
 按 `q` 退出程序。
 
-6. 说明
+## 6.运行效果
+
+### 实时目标检测
+
+<img width="957" height="635" alt="image" src="https://github.com/user-attachments/assets/85d37efc-6e24-4fe0-a83a-b18b92f4af97" />
+
+### HSV 分割结果
+
+<img width="903" height="685" alt="image" src="https://github.com/user-attachments/assets/559a5701-4dbd-4927-8431-47a742b286e8" />
+
+### HSV 参数调节
+
+<img width="866" height="807" alt="image" src="https://github.com/user-attachments/assets/d7dfd1ff-0633-49e4-aa5d-6ed16c3b27ad" />
+
+## 7. 说明
 该项目主要用于 OpenCV 与计算机视觉基础学习，
 并非复杂目标检测算法。
