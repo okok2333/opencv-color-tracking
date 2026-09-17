@@ -1,4 +1,4 @@
-##Opencv-color-tracking
+## Opencv-color-tracking
 OpenCV real-time color tracking practice project
 
 一个基于 OpenCV 的实时颜色目标检测与定位学习项目。
